@@ -11,15 +11,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700&display=swap');
         
         :root {
-            --bg-deep: #0a0e1a;
-            --bg-gradient: radial-gradient(ellipse at center, #1a2332 0%, #0a0e1a 100%);
-            --accent-primary: #6366f1;
-            --accent-secondary: #8b5cf6;
+            /* 主色调：科技蓝 */
+            --primary-color: #1A5F7A;
+            /* 辅助色 */
+            --success-color: #00B894;
+            --warning-color: #FDCB6E;
+            --danger-color: #E17055;
+            --info-color: #74B9FF;
+            /* 背景色 */
+            --bg-primary: #0F2B3D;
+            --bg-secondary: #1E3A4D;
+            --bg-gradient: radial-gradient(ellipse at center, #1E3A4D 0%, #0F2B3D 100%);
+            /* 强调色 */
             --accent-cyan: #06b6d4;
             --accent-rose: #ef4444;
             --accent-green: #10b981;
-            --panel-glass: rgba(15, 23, 42, 0.75);
-            --panel-border: rgba(147, 197, 253, 0.15);
+            /* 面板样式 */
+            --panel-glass: rgba(30, 58, 77, 0.85);
+            --panel-border: rgba(116, 185, 255, 0.15);
+            /* 文字颜色 */
             --text-primary: #f8fafc;
             --text-secondary: #cbd5e1;
             --text-muted: #94a3b8;
@@ -35,7 +45,7 @@
         .tech-font { font-family: 'Orbitron', sans-serif; letter-spacing: 0.1em; }
         
         .bg-commander {
-            background: var(--bg-gradient);
+            background: var(--bg-primary);
         }
         
         .vignette {
@@ -50,14 +60,14 @@
             background: var(--panel-glass);
             backdrop-filter: blur(20px);
             border: 1px solid var(--panel-border);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(99, 102, 241, 0.1);
-            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(26, 95, 122, 0.1);
+            border-radius: 12px;
             transition: all 0.3s ease;
         }
         
         .glass-panel:hover {
-            border-color: rgba(99, 102, 241, 0.3);
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(99, 102, 241, 0.2);
+            border-color: rgba(26, 95, 122, 0.3);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(26, 95, 122, 0.2);
         }
         
         /* 自定义极细滚动条 */
@@ -88,7 +98,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/gfzl/assets/index-CNJwgE4r.js"></script>
+  <script type="module" crossorigin src="/gfzl/assets/index-tfLDUYwO.js"></script>
 </head>
 <body class="bg-commander">
     <div class="vignette"></div>
